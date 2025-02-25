@@ -1,0 +1,7 @@
+.thunar * { background-color: #3B4252; }
+.thunar .sidebar .view { color: #e5e9f0; }
+.thunar .standard-view .view { color: #e5e9f0; }
+.thunar { font-size: 12pt; font-family: "Monaspace Krypton" }
+.thunar .view:selected { background-color: #daa6ca; color: #3B4252; }
+.thunar > grid > toolbar * { color: #82b8c7; }
+.thunar > grid { color: #daa6ca; }

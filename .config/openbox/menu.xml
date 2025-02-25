@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Terminal emulator">
+    <action name="Execute"><execute>alacritty</execute></action>
+  </item>
+  <separator label="Editors" />
+  <item label="Mousepad">
+    <action name="Execute">
+      <command>
+        mousepad
+      </command>
+    </action>
+  </item>
+  <item label="VSCode">
+    <action name="Execute"><execute>code</execute></action>
+  </item>
+  <separator label="File Manager" />
+  <item label="Thunar">
+    <action name="Execute">
+      <command>
+          thunar
+      </command>
+    </action>
+  </item>
+  <separator label="Internet" />
+  <item label="Firefox">
+    <action name="Execute"><execute>x-www-browser</execute></action>
+  </item>
+  <!-- This requires the presence of the 'obamenu' package to work -->
+ <!-- <menu id="/Debian" /> -->
+  <separator />
+  <!-- <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu"/> -->
+<menu id="settings" label="Settings">
+            <item label="PulseAudio">
+                <action name="Execute">
+                    <command>
+                        pavucontrol
+                    </command>
+                </action>
+            </item>
+            <item label="Obconf">
+                <action name="Execute">
+                    <command>
+                        obconf
+                    </command>
+                </action>
+            </item>
+            <item label="Tint2 Config">
+                <action name="Execute">
+                    <command>
+                        tint2conf
+                    </command>
+                </action>
+            </item>
+            <item label="Mousepad Settings">
+                <action name="Execute">
+                    <command>
+                        mousepad --preferences
+                    </command>
+                </action>
+            </item>
+            <item label="LXAppearance">
+                <action name="Execute">
+                    <command>
+                        lxappearance
+                    </command>
+                </action>
+            </item>
+            <item label="Connection Editor">
+                <action name="Execute">
+                    <command>
+                        nm-connection-editor
+                    </command>
+                </action>
+            </item>
+            <separator label="Thunar" />
+            <item label="Settings">
+                <action name="Execute">
+                    <command>
+                        thunar-settings
+                    </command>
+                </action>
+            </item>
+            <item label="Removable Drives and Media">
+                <action name="Execute">
+                    <command>
+                        thunar-volman-settings
+                    </command>
+                </action>
+            </item>
+            <separator label="Requires sudo" />
+            <item label="Lightdm GTK Settings">
+                <action name="Execute">
+                    <command>
+                        lightdm-gtk-greeter-settings
+                    </command>
+                </action>
+            </item>
+        </menu>
+        <separator />
+        <item label="Task Manager">
+            <action name="Execute">
+                <command>
+                    xfce4-taskmanager
+                </command>
+            </action>
+        </item>
+        <item label="Restart">
+            <action name="Execute">
+                <command>
+                    openbox --restart
+                </command>
+            </action>
+        </item>
+    </menu>
+  <separator />
+  <item label="Restart">
+    <action name="Restart" />
+  </item>
+  <separator />
+  <item label="Exit">
+    <action name="Exit" />
+  </item>
+</menu>
+
+</openbox_menu>
